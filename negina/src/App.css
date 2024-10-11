@@ -1,0 +1,550 @@
+/* Global App styling */
+.App {
+  text-align: center;
+  background-color: #f0f8ff;
+  min-height: 100vh;
+min-width: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.landing-container {
+  display: flex;
+  width: 100vw; /* Full width of the screen */
+  
+}
+
+.welcome-section {
+  width: 50%; /* Takes 50% of the screen (left side) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  text-align: left;
+}
+
+.welcome-message {
+  font-size: 3.6em;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+
+}
+
+.button-group {
+  margin-top: 20px;
+}
+
+.button {
+  padding: 15px 80px;
+  margin-right: 20px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.signup {
+  background-color: #ad12aa;
+  color: white;
+}
+
+.signin {
+  background-color: #12ad;
+  color: white;
+}
+
+.signup:hover {
+  background-color: #45a049;
+}
+
+.signin:hover {
+  background-color: #007bb5;
+}
+
+.image-section {
+  width: 50%; /* Takes 50% of the screen (right side) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.placeholder-image {
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* SignUp Page Styling */
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  background: linear-gradient(to bottom, #3c8ce7, #00eaff);
+}
+
+.form-step {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Role selection buttons */
+.role-buttons {
+  display: flex;
+  justify-content: space-around; /* Spread the buttons evenly */
+  margin-top: 30px;
+  gap: 20px; /* Adds space between the buttons */
+}
+
+.role-btn {
+  background-color: #3c8ce7;
+  color: white;
+  border: none;
+  padding: 15px 30px; /* Increased padding for larger buttons */
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em; /* Increased font size */
+  transition: background-color 0.3s ease;
+  width: 100%; /* Makes buttons fill their container */
+  max-width: 200px; /* Sets a maximum width to keep buttons manageable */
+}
+
+.role-btn:hover {
+  background-color: #00eaff;
+}
+/* Adjusting submit button */
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px; /* Larger padding for a bigger button */
+  margin-top: 30px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1.2em; /* Larger font */
+  transition: background-color 0.3s ease;
+  width: 100%; /* Full width button */
+  max-width: 250px; /* Set a max width for the submit button */
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Form input fields */
+.signup-form input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.submit-btn {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Animations */
+.animated-slide-in {
+  animation: slideIn 0.6s ease-in-out forwards;
+}
+
+.animated-slide-up {
+  animation: slideUp 0.6s ease-in-out forwards;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f8ff;
+  animation: fadeIn 1s;
+}
+
+.signin-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.role-button {
+  padding: 15px 25px;
+  margin: 0 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #12ad;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.role-button:hover {
+  background-color: #007bb5;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.input-field {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.submit-button {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #ad12aa;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f8ff;
+  animation: fadeIn 1s;
+}
+
+.signin-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.role-button {
+  padding: 15px 25px;
+  margin: 0 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #12ad;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.role-button:hover {
+  background-color: #007bb5;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.input-field {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.submit-button {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #ad12aa;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f8ff;
+  animation: fadeIn 1s;
+}
+
+.signin-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.role-button {
+  padding: 15px 25px;
+  margin: 0 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #12ad;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.role-button:hover {
+  background-color: #007bb5;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.input-field {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.submit-button {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #ad12aa;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.signin-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f8ff;
+  animation: fadeIn 1s;
+}
+
+.signin-title {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.role-button {
+  padding: 15px 25px;
+  margin: 0 10px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #12ad;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.role-button:hover {
+  background-color: #007bb5;
+}
+
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.input-field {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.submit-button {
+  padding: 15px;
+  font-size: 1.2em;
+  border: none;
+  border-radius: 5px;
+  background-color: #ad12aa;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #45a049;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  
+}
+.class-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.class-button {
+  padding: 15px;
+  margin: 10px 0;
+  text-align: center;
+  background-color: #007bff; /* Bootstrap Primary Blue */
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.class-button:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.student-entry {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+.class-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columns */
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+.class-button {
+  padding: 30px; /* Increased padding for larger buttons */
+  background-color: #007bff; /* Button color */
+  color: white;
+  border-radius: 10px; /* Rounded corners */
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1.2em; /* Larger font size */
+}
+
+.class-button:hover {
+  background-color: #0056b3; /* Darker shade for hover */
+  transform: translateY(-2px); /* Lift effect */
+}
